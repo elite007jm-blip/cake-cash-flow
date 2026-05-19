@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { Check, Star, ShieldCheck, Clock, Award, Heart, Sparkles, ChefHat, DollarSign, Users, Quote } from "lucide-react";
@@ -377,7 +378,6 @@ function LiveDigit({ label }: { label: string }) {
   return <>{String(left % 60).padStart(2, "0")}</>;
 }
 
-import { useEffect, useState } from "react";
 function useTimer(): [number, (n: number) => void] {
   const [left, setLeft] = useState(60 * 17 + 42);
   useEffect(() => {
