@@ -65,9 +65,6 @@ function SalesPage() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_color-mix(in_oklab,var(--primary)_20%,transparent),transparent_60%)]" />
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-12 lg:grid-cols-2 lg:py-20">
           <motion.div {...fadeUp}>
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
-              <Sparkles className="h-3 w-3" /> Acceso inmediato · 7 días GRATIS
-            </div>
             <h1 className="text-4xl font-bold leading-[1.05] sm:text-5xl lg:text-6xl">
               Conviértete en <span className="text-gradient-pink">pastelera profesional</span> y gana dinero desde casa
             </h1>
