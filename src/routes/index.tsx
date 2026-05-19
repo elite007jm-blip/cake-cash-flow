@@ -76,7 +76,7 @@ function SalesPage() {
             </p>
 
             <ul className="mt-6 space-y-2.5 text-sm sm:text-base">
-              {["7 días GRATIS de clases en vivo", "+100 clases grabadas para siempre", "Acompañamiento 24/7 con la comunidad"].map((t) => (
+              {["Ebook de recetas virales que se venden todos los días", "Ebook de buttercream profesional paso a paso", "Ebook de estrategias para vender postres en redes sociales"].map((t) => (
                 <li key={t} className="flex items-center gap-3">
                   <span className="rounded-full bg-success/15 p-1"><Check className="h-4 w-4 text-success" /></span>
                   {t}
