@@ -101,11 +101,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 function RootShell({ children }: { children: React.ReactNode }) {
   const metaPixelScript = `!function(f,b,e,v,n,t,s)\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\nn.queue=[];t=b.createElement(e);t.async=!0;\nt.src=v;s=b.getElementsByTagName(e)[0];\ns.parentNode.insertBefore(t,s)}(window, document,'script',\n'https://connect.facebook.net/en_US/fbevents.js');\nfbq('init', '2424234474746736');\nfbq('track', 'PageView');`;
 
+  const clarityScript = `(function(c,l,a,r,i,t,y){\nc[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};\nt=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;\ny=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);\n})(window, document, "clarity", "script", "wv9v1ztsgi");`;
+
   return (
     <html lang="en">
       <head>
         <HeadContent />
         <script dangerouslySetInnerHTML={{ __html: metaPixelScript }} />
+        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: clarityScript }} />
       </head>
       <body>
         <noscript>
